@@ -1,0 +1,90 @@
+:root {
+    --primary: #111827;
+    --secondary: #1f2937;
+    --tertiary: #fe5e02;
+    --quaternary:  #F1F8FF;
+
+
+    --linear-color-for-domain-name: linear-gradient(90deg, #ffff 5%, #fe5e02 50%, #ffff 90%);
+}
+
+.light-theme
+{
+    --primary: #111827;
+    --secondary: #1f2937;
+    --tertiary: #fe5e02;
+    --quaternary:  #0000;
+}
+
+.bg-pr {
+    background-color: var(--primary);
+}
+.bg-sec {
+    background-color: var(--secondary);
+}
+.bg-ter {
+    background-color: var(--tertiary);
+}
+.bg-qua {
+    background-color: var(--quaternary);
+}
+
+.text-pr {
+    color: var(--primary);
+}
+.text-sec {
+    color: var(--secondary);
+}
+.text-ter {
+    color: var(--tertiary);
+}
+.text-qua {
+    color: var(--quaternary);
+}
+
+.domain-name {
+    background: var(--linear-color-for-domain-name);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--tertiary);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary);
+}
+
+
+.overflow-x-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb,
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary);
+    border-radius: 5px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover,
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background-color: var(--tertiary);
+}
+
+.overflow-x-auto::-webkit-scrollbar-track,
+.overflow-y-auto::-webkit-scrollbar-track {
+    background-color: var(--secondary);
+}
